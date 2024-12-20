@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Quotes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        .quote-container {
+            margin: 20px 0;
+        }
+        .quote {
+            font-size: 24px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <h1>Random Quotes Generator</h1>
+    <div class="quote-container">
+        {% for quote in quotes %}
+            <div class="quote">{{ quote }}</div>
+        {% endfor %}
+    </div>
+</body>
+</html>
